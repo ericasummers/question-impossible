@@ -16,7 +16,7 @@ export default Ember.Component.extend({
         date: this.get('date')
       };
       this.set('updateQuestionShowing', false);
-      this.sendAction('update', question, params);
+      this.sendAction('updateQuestion', question, params);
     }
   }
 });

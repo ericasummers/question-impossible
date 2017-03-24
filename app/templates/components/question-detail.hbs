@@ -2,14 +2,14 @@
 <p>by {{question.author}} on {{question.date}}</p>
 <br>
 <button {{action 'delete' question}} class="btn btn-danger">Delete</button>
-{{question-update question=question update="update"}}
+{{question-update question=question updateQuestion="updateQuestion"}}
 <hr>
 <h2>Answers:</h2>
 
 <ul>
 {{#each question.answers as |answer|}}
   <li>
-    {{answer-detail answer=answer}}
+    {{answer-detail answer=answer destroyAnswer="destroyAnswer"}}
   </li>
 {{/each}}
 </ul>

@@ -14,7 +14,7 @@ export default Ember.Route.extend({
       });
       this.transitionTo('index');
     },
-    update(question, params) {
+    updateQuestion(question, params) {
       Object.keys(params).forEach(function(key) {
         if (params[key]!==undefined) {
           question.set(key, params[key]);
@@ -31,6 +31,10 @@ export default Ember.Route.extend({
         return question.save();
       });
       this.transitionTo('question', question);
+    },
+    destroyAnswer(answer) {
+      answer.destroyRecord();
+      this.transitionTo('question');
     }
   }
 });

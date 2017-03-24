@@ -7,15 +7,11 @@ export default Ember.Component.extend({
         this.sendAction('destroyQuestion', question);
       }
     },
-    update(question, params) {
-      this.sendAction('update', question, params);
+    updateQuestion(question, params) {
+      this.sendAction('updateQuestion', question, params);
     },
-    saveAnswer() {
-      var params = {
-        body: this.get('body'),
-        author: this.get('author'),
-        date: this.get('date')
-      };
-      this.sendAction('saveAnswer', params);
+    destroyAnswer(answer) {
+      this.sendAction('destroyAnswer', answer);
+    }
   }
 });
