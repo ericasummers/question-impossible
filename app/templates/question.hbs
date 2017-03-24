@@ -1,6 +1,7 @@
-{{question-detail question=model destroyQuestion="destroyQuestion" updateQuestion="updateQuestion" destroyAnswer="destroyAnswer" updateAnswer="updateAnswer"}}
-<br>
-{{add-answer question=model saveAnswer="saveAnswer"}}
-<br>
+<div class="question-section">
+  {{question-detail question=model destroyQuestion="destroyQuestion" updateQuestion="updateQuestion" destroyAnswer="destroyAnswer" updateAnswer="updateAnswer"}}
+  {{add-answer question=model saveAnswer="saveAnswer"}}
+  <br>
 
-{{#link-to 'index'}}Back{{/link-to}}
+  {{#link-to 'index'}}Back{{/link-to}}
+</div>
