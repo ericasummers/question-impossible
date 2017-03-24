@@ -1,6 +1,6 @@
 <h2>{{question.body}}</h2>
 <p>by {{question.author}} on {{question.date}}</p>
 <br>
-<button {{action 'delete' question}}>Delete</button>
+<button {{action 'delete' question}} class="btn btn-danger">Delete</button>
 <br>
 {{question-update question=question update="update"}}
