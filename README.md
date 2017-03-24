@@ -1,7 +1,12 @@
-# question-impossible
+# _Question Impossible_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _This webpage allows users to post questions and answers to those questions_
+
+#### By _**Erica Wright**_
+
+## Description
+
+This webpage allows users to post questions that are difficult to answer in a challenge to stump any visitors. Visitors can post answers in an attempt to resolve the question and visitors can vote on answers. If no one can answer a poster's question, the poster is crowned a master Trickster.
 
 ## Prerequisites
 
@@ -15,7 +20,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/ericaw21/question-impossible>` https://github.com/ericaw21/question-impossible
 * `cd question-impossible`
 * `npm install`
 * `bower install`
@@ -25,9 +30,14 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+## Specifications
 
-Make use of the many generators for code, try `ember help generate` for more details
+|*Behavior*|*Output*|
+|----------|--------|
+
+## Support and contact details
+
+_Please contact ericaw21@gmail.com for questions or concerns._
 
 ### Running Tests
 
@@ -39,9 +49,14 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+## Technologies
 
-Specify what it takes to deploy your app.
+* _Javascript_
+* _jQuery_
+* _Node_
+* _Ember_
+* _CSS_
+* _HTML_
 
 ## Further Reading / Useful Links
 
@@ -50,3 +65,9 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+## License
+
+*MIT License*
+
+Copyright (c) 2017 Erica Wright All Rights Reserved.
