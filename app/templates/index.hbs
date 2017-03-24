@@ -1,1 +1,11 @@
-{{outlet}}
+<div class="questions">
+  {{#each model.questions as |question|}}
+    <div class="question">
+    {{question.body}} by {{question.author}} on {{question.date}}
+    <br>
+    </div>
+  {{/each}}
+</div>
+<div class="add-question">
+  <p>Add a question!</p>
+</div>
