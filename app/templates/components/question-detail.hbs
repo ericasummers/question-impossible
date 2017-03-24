@@ -8,6 +8,7 @@
   </div>
   <div class="col-lg-8" id="answers">
     <h3>Answers:</h3>
+    {{add-answer question=question saveAnswer="saveAnswer"}}
     <ul>
     {{#each question.answers as |answer|}}
       <li>
