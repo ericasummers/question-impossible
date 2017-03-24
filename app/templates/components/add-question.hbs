@@ -1,0 +1,20 @@
+{{#if addQuestionShowing}}
+  <form>
+    <div class="form-group">
+      <label for="body">Question:</label>
+      {{input value=body id="body"}}
+    </div>
+    <div class="form-group">
+      <label for="author">Username:</label>
+      {{input value=author id="author"}}
+    </div>
+    <div class="form-group">
+      <label for="date">Date:</label>
+      {{input value=date id="date" type="date"}}
+    </div>
+
+    <button class="btn btn-info" {{action 'addQuestion'}}>Submit!</button>&nbsp;&nbsp;<button class="btn btn-danger" {{action 'cancelQuestion'}}>Cancel</button>
+  </form>
+{{else}}
+  <button {{action 'showQuestionForm'}}>Add a Question!</button>
+{{/if}}

@@ -1,11 +1,12 @@
 <div class="questions">
   {{#each model.questions as |question|}}
     <div class="question">
-    {{question.body}} by {{question.author}} on {{question.date}}
+    {{#link-to 'question' question.id}}{{question.body}} by {{question.author}}{{/link-to}}
     <br>
     </div>
   {{/each}}
 </div>
 <div class="add-question">
+  {{add-question question=question}}
   <p>Add a question!</p>
 </div>
