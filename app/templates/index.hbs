@@ -1,7 +1,7 @@
 <div class="questions">
   {{#each model.questions as |question|}}
     <div class="question">
-    {{#link-to 'question' question.id}}{{question.body}} by {{question.author}}{{/link-to}} <button {{action 'delete' question}}>Delete</button>
+    {{#link-to 'question' question.id}}{{question.body}} by {{question.author}}{{/link-to}}
     <br>
     </div>
   {{/each}}
