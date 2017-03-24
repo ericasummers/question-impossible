@@ -72,6 +72,15 @@ a:hover {
   color: white;
 }
 
+#delete-answers {
+  float: right;
+  padding: 3px;
+}
+
+/*.btn {
+  padding: 3px;
+}*/
+
 .footer {
   display: block;
   padding-bottom: 1%;
