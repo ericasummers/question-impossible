@@ -1,13 +1,20 @@
-<div class="questions">
-  {{#each model.questions as |question|}}
-    <div class="question">
-    {{#link-to 'question' question.id}}{{question.body}} by {{question.author}}{{/link-to}}
-    <br>
-    </div>
-  {{/each}}
-</div>
-<br>
-<hr>
-<div class="add-question">
-  {{add-question question=question saveQuestion="saveQuestion"}}
+<div class="row">
+  <div class="col-lg-8" id="questions">
+    <h2>Try your hand at solving some of life's mysteries...</h2>
+    <h4>(Or just be a judgmental troll)</h4>
+    <ul>
+    {{#each model.questions as |question|}}
+      <li>
+      <div class="question">
+      {{#link-to 'question' question.id}}{{question.body}}{{/link-to}}
+      <br>
+      </div>
+      </li>
+    {{/each}}
+  </ul>
+  </div>
+  <div class="col-lg-4" id="add-question">
+    <h4>Think you can stump us?</h4>
+    {{add-question question=question saveQuestion="saveQuestion"}}
+  </div>
 </div>

@@ -1,0 +1,78 @@
+#navbar {
+  background-color: #33383F;
+  top: 0px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  color: #88D5CA;
+  height: 22%;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  margin-top: 10%;
+  background: url('nebula-edit.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #299B78;
+  font-size: 120%;
+}
+
+a:hover {
+  color: white;
+  font-size: 120%;
+}
+
+#content {
+  background: rgba(33, 80, 91, 0.6);
+  padding: 0.8%;
+  margin-top: 1%;
+  color: white;
+}
+
+.col-lg-8 {
+  border-right: solid 1px white;
+}
+
+.col-lg-8 a {
+  font-size: 140%;
+}
+
+.col-lg-8 a:hover {
+  font-size: 140%;
+}
+
+.add-question {
+  border: solid 1px #33383F;
+  background-color: teal;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+}
+
+.add-question:hover {
+  background-color: #145955;
+  border: solid 1px white;
+  color: white;
+}
+
+.footer {
+  display: block;
+  padding-bottom: 1%;
+  margin-top: 75px;
+  font-size: 60%;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 37%;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
