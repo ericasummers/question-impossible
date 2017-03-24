@@ -17,5 +17,5 @@
     <button class="btn btn-info" {{action 'update' question}}>Update</button>&nbsp;&nbsp;<button class="btn btn-danger" {{action 'cancelUpdate'}}>Cancel</button>
   </form>
 {{else}}
-  <button {{action 'showUpdateForm'}} class="btn btn-success">Update Question</button>
+  <h5 {{action 'showUpdateForm'}} id="edit-question">Update Question</h5>
 {{/if}}

@@ -1,9 +1,7 @@
 <div class="row">
   <div class="col-lg-4">
     <h2>{{question.body}}</h2>
-    <p>by {{question.author}} on {{question.date}}</p>
-    <br>
-    <button {{action 'delete' question}} class="btn btn-danger">Delete</button>
+    <p>by {{question.author}} on {{question.date}}<button {{action 'delete' question}} class="btn btn-danger" id="delete-question">Delete</button></p>
     {{question-update question=question updateQuestion="updateQuestion"}}
   </div>
   <div class="col-lg-8" id="answers">

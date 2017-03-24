@@ -57,7 +57,7 @@ a:hover {
   font-size: 140%;
 }
 
-.add-question, #edit-answer {
+.add-question, #edit-answer, #edit-question {
   border: solid 1px #33383F;
   background-color: teal;
   padding: 5px;
@@ -66,20 +66,16 @@ a:hover {
   color: black;
 }
 
-.add-question:hover, #edit-answer:hover {
+.add-question:hover, #edit-answer:hover, #edit-question:hover {
   background-color: #145955;
   border: solid 1px white;
   color: white;
 }
 
-#delete-answers {
+#delete-answers, #delete-question {
   float: right;
   padding: 3px;
 }
-
-/*.btn {
-  padding: 3px;
-}*/
 
 .footer {
   display: block;
