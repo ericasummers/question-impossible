@@ -9,6 +9,13 @@ export default Ember.Component.extend({
     },
     update(question, params) {
       this.sendAction('update', question, params);
-    }
+    },
+    saveAnswer() {
+      var params = {
+        body: this.get('body'),
+        author: this.get('author'),
+        date: this.get('date')
+      };
+      this.sendAction('saveAnswer', params);
   }
 });
