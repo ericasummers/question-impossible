@@ -34,6 +34,14 @@ You will need the following things properly installed on your computer.
 
 |*Behavior*|*Output*|
 |----------|--------|
+|User selects "Add Question"|Question is saved and posted with its own page created: "Why do snakes scare the crap out of me? by scaredy-cat, 2017-03-20"|
+|User selects to update question| Question is updated on page and database "Why do snakes freak me out?"|
+|User selects to delete a question|Question is deleted from webpage and firebase database|
+|User selects to submit an answer|Answer posted on individual question page: "Because you're a mouse, by smarty-pants, 2017-03-21"|
+|User selects to update answer| Answer is updated on page and database "Because you're a field mouse"|
+|User selects to delete an answer|Answer is deleted from webpage and firebase database|
+|User clicks "right" or "wrong" button next to answer|Tally of right and wrong guesses is updated|
+
 
 ## Support and contact details
 
