@@ -18,6 +18,9 @@ export default Ember.Component.extend({
       };
       this.set('updateAnswerShowing', false);
       this.sendAction('updateAnswer', answer, params);
+      this.set('body', '');
+      this.set('author', '');
+      this.set('date');
     }
   }
 });

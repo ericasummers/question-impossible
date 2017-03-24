@@ -15,6 +15,9 @@ export default Ember.Component.extend({
       };
       this.sendAction('saveAnswer', params);
       this.set('addAnswerShowing', false);
+      this.set('body', '');
+      this.set('author', '');
+      this.set('date');
     },
     cancelAnswer() {
       this.set('addAnswerShowing', false);

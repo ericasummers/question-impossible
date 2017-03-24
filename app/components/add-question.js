@@ -14,6 +14,9 @@ export default Ember.Component.extend({
       };
       this.sendAction('saveQuestion', params);
       this.set('addQuestionShowing', false);
+      this.set('body', '');
+      this.set('author', '');
+      this.set('date');
     },
     cancelQuestion: function() {
       this.set('addQuestionShowing', false);
