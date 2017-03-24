@@ -9,7 +9,7 @@
 <ul>
 {{#each question.answers as |answer|}}
   <li>
-    {{answer-detail answer=answer destroyAnswer="destroyAnswer"}}
+    {{answer-detail answer=answer destroyAnswer="destroyAnswer" updateAnswer="updateAnswer"}}
   </li>
 {{/each}}
 </ul>
