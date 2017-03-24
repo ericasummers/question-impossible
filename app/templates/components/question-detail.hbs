@@ -2,3 +2,5 @@
 <p>by {{question.author}} on {{question.date}}</p>
 <br>
 <button {{action 'delete' question}}>Delete</button>
+<br>
+{{question-update question=question update="update"}}
