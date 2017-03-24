@@ -6,7 +6,13 @@ export default Ember.Component.extend({
     showQuestionForm: function() {
       this.set('addQuestionShowing', true);
     },
-    addQuestion: function() {
+    saveQuestion: function() {
+      var params = {
+        body: this.get('body'),
+        author: this.get('author'),
+        date: this.get('date')
+      };
+      this.sendAction('saveQuestion', params);
       this.set('addQuestionShowing', false);
     },
     cancelQuestion: function() {
