@@ -1,9 +1,28 @@
+body {
+  background: url('nebula-edit.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
 #navbar {
   background-color: #33383F;
-  top: 0px;
+  top: 0;
+  left: 0;
   text-align: center;
   width: 100%;
-  position: absolute;
+  position: fixed;
   color: #88D5CA;
   height: 130px;;
   font-family: 'Lato', sans-serif;
@@ -11,12 +30,9 @@
 
 .container {
   margin-top: 130px;
-  background: url('nebula-edit.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
+  padding-bottom: 30px;
+  min-height: 100%;
+  overflow-y: auto;
 }
 
 input {
@@ -56,20 +72,6 @@ a:hover {
   font-size: 140%;
 }
 
-.agree-answer, .disagree-answer {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.agree-answer:hover, .disagree-answer:hover {
-  color: skyblue;
-}
-
-.consensus {
-  float: right;
-  margin: 2px;
-}
-
 .add-question, #edit-answer, #edit-question {
   border: solid 1px #33383F;
   background-color: teal;
@@ -91,12 +93,13 @@ a:hover {
 }
 
 .footer {
-  display: block;
   font-size: 60%;
   position: absolute;
-  bottom: 0px;
-  margin-left: 37%;
+  width: 100%;
+  bottom: 0;
   text-align: center;
   font-size: 14px;
   color: white;
+  height: 30px;
+  padding-top: 2px;
 }

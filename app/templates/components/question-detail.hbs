@@ -3,11 +3,13 @@
     <h2>{{question.body}}</h2>
     <p>by {{question.author}} on {{question.date}}<button {{action 'delete' question}} class="btn btn-danger" id="delete-question">Delete</button></p>
     {{question-update question=question updateQuestion="updateQuestion"}}
+    <br>
+    {{#link-to 'index'}}Back{{/link-to}}
   </div>
   <div class="col-lg-8" id="answers">
     <br>
-    <h3>Other flimsy attempts at answers:</h3>
     {{add-answer question=question saveAnswer="saveAnswer"}}
+    <h3>Other flimsy attempts at answers:</h3>
     <ul>
     {{#each question.answers as |answer|}}
       <li>

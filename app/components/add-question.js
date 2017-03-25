@@ -16,7 +16,7 @@ export default Ember.Component.extend({
       this.set('addQuestionShowing', false);
       this.set('body', '');
       this.set('author', '');
-      this.set('date');
+      this.set('date', '');
     },
     cancelQuestion: function() {
       this.set('addQuestionShowing', false);

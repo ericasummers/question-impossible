@@ -1,15 +1,17 @@
-<div id="navbar">
-  <h2>Question Impossible</h2>
-  <h4>Where impossible questions seek answers</h4>
-  {{#link-to 'index'}}<i class="fa fa-home" aria-hidden="true"></i> Home{{/link-to}}&nbsp;&nbsp;&nbsp;
-  {{#link-to 'about'}}<i class="fa fa-info-circle" aria-hidden="true"></i> About{{/link-to}}
-</div>
-
-<div class="container">
-  <div id="content">
-    {{outlet}}
+<div class="wrapper">
+  <div id="navbar">
+    <h2>Question Impossible</h2>
+    <h4>Where impossible questions seek answers</h4>
+    {{#link-to 'index'}}<i class="fa fa-home" aria-hidden="true"></i> Home{{/link-to}}&nbsp;&nbsp;&nbsp;
+    {{#link-to 'about'}}<i class="fa fa-info-circle" aria-hidden="true"></i> About{{/link-to}}
   </div>
-</div>
-<div class="footer">
-  Copyright (c) 2017 Erica Wright All Rights Reserved.
+
+  <div class="container">
+    <div id="content">
+      {{outlet}}
+    </div>
+  </div>
+  <div class="footer">
+    Copyright (c) 2017 Erica Wright All Rights Reserved.
+  </div>
 </div>
