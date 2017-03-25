@@ -6,7 +6,7 @@
     {{#each model.questions as |question|}}
       <li>
       <div class="question">
-      {{#link-to 'question' question.id}}{{question.body}}{{/link-to}}
+      {{#link-to 'question' question.id}}{{question.body}} by {{question.author}}{{/link-to}}
       <br>
       </div>
       </li>
